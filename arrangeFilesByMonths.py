@@ -11,19 +11,19 @@ goBackOneDir(os.getcwd())
 
 #Now we want to organize the mypython directory..
 #So to do that let's get the path to that
-pathMain = os.getcwd()
-pathPython = os.path.join(pathMain , "mypython")
-allFiles = os.listdir("mypython")
-os.chdir("mypython")
+print("Please input the path to the directory which you want to organize: ")
+path = input()
+allFiles = os.listdir(path)
+os.chdir(path)
 for file in allFiles:
-    filePath = os.path.join(pathPython , file)
+    filePath = os.path.join(path , file)
     if os.path.isfile(filePath):
         getCreatedDate = str(datetime.datetime.fromtimestamp(os.path.getmtime(filePath)))
         getCreatedDate = getCreatedDate[5:7]
         if not os.path.exists("M-" + getCreatedDate):
             os.mkdir("M-" + getCreatedDate)
         #Below is the code for moving a file from one directory to another
-        
+
         #opening both the files the src and the dst
         fileSrc = open(file)
 

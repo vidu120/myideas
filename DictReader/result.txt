@@ -1,0 +1,5 @@
+Vidhan who is a Male is 19 years old
+Chahak who is a Female is 23 years old
+Surbhi who is a Female is 27 years old
+Anil who is a Male is 53 years old
+Sapna who is a Female is 49 years old
