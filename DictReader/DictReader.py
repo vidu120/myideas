@@ -3,7 +3,6 @@ import os
 import csv
 
 with open("result.txt" , "w") as result:
-    os.chdir(os.path.join(os.getcwd() , ".."))
     with open("csv0_file.txt") as family_info:
          file = csv.DictReader(family_info)
          for line in file:

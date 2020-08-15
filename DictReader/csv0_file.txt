@@ -1,0 +1,7 @@
+name,age,sex
+vidhan,19,Male
+chahak,23,Female
+Surbhi,27,Female
+Sapna,48,Female
+Anil,53,Male
+Babulalji,89,Male
